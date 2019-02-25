@@ -58,7 +58,7 @@ hi def link     tpUnits             Special
 " syn match       tpMod               /ACC/
 " syn match       tpMod               /Skip/
 " syn match       tpMod               /PSPD/
-syn match       tpMod               /\<ACC\d+/
+syn match       tpMod               /\<ACC\d\+/
 syn keyword       tpMod               Skip
 syn keyword       tpMod               PSPD
 syn keyword     tpMod               DA DB INC Offset PTH TA TB Tool_Offset VOFFSET BREAK Wjnt
@@ -117,7 +117,7 @@ hi def link     tpData              Type
 
 " mod by Knosowski: added Delimiter [ and ] because in case of indirect addressing to
 " much stuff has the same color. eg: LBL[PR[4,5:pregname]]
-syn match tpDelimiter /[\[\]]/
+syn match tpDelimiter /[\[\]()]/
 hi def link tpDelimiter Delimiter
 
 " Item comment
