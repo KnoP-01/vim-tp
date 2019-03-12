@@ -1,5 +1,9 @@
 # VIM-FANUC-TP
 
+My fork of [onerobotics/vim-tp](https://github.com/onerobotics/vim-tp)
+contains some changes in syntax as well as a ftplugin which enables gf on
+calls.
+
 This vim bundle adds syntax highlighting for FANUC's TP programming language.
 
 ## Installing and Using
