@@ -21,7 +21,7 @@ if !exists("*<SID>TPAutoCorrCfgLineEnding()")
     setf tp
     if get(g:,'tpAutoCorrLineEnd',1)
       silent! %s/\r//
-      normal ``
+      silent! normal ``
     endif
   endfunction
 endif
