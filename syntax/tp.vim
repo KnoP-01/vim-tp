@@ -59,9 +59,11 @@ hi def link     tpUnits             Special
 " syn match       tpMod               /Skip/
 " syn match       tpMod               /PSPD/
 syn match       tpMod               /\<ACC\d\+/
+syn keyword       tpMod               AP_LD
+syn keyword       tpMod               RT_LD
 syn keyword       tpMod               Skip
 syn keyword       tpMod               PSPD
-syn keyword     tpMod               DA DB INC Offset PTH TA TB Tool_Offset VOFFSET BREAK Wjnt
+syn keyword     tpMod               DA DB INC MROT Offset PTH TA TB Tool_Offset VOFFSET BREAK Wjnt
 hi def link     tpMod               Special
 
 " String Functions
