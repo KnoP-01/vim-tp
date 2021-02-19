@@ -2,7 +2,7 @@
 " Language: Fanuc TP
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeff.de>
 " Version: 1.0.0
-" Last Change: 12. Mar 2019
+" Last Change: 19. Feb 2021
 "
 " Suggestions of improvement are very welcome. Please email me!
 "
@@ -19,7 +19,7 @@ let s:keepcpo = &cpo
 set cpo&vim
 
 setlocal suffixesadd+=.ls
-nnoremap <leader>dc :%s/\(LBL\)\@<![\[,]\d\+\zs:[^\]]*//g<CR>
+nnoremap <silent><buffer> <leader>dc :%s/\(LBL\)\@<![\[,]\d\+\zs:[^\]]*//g<CR>
 let b:undo_ftplugin = "setlocal sua<"
 
 let &cpo = s:keepcpo
