@@ -2,7 +2,7 @@
 " Language: Fanuc TP
 " Maintainer: Patrick Meiser-Knosowski <knosowski@graeff.de>
 " Version: 1.0.0
-" Last Change: 17. May 2019
+" Last Change: 19. Feb 2021
 " Credits:
 "
 " Suggestions of improvement are very welcome. Please email me!
@@ -15,6 +15,7 @@ au BufNewFile,BufRead \c*.ls setf tp
 
 augroup tpftdetect
   au! filetypedetect BufRead \c*.ls call <SID>TPAutoCorrCfgLineEnding()
+  au! filetypedetect BufRead \c*.pe call <SID>TPAutoCorrCfgLineEnding()
 augroup END
 if !exists("*<SID>TPAutoCorrCfgLineEnding()")
   function <SID>TPAutoCorrCfgLineEnding()
