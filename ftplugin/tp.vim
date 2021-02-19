@@ -19,6 +19,10 @@ let s:keepcpo = &cpo
 set cpo&vim
 
 setlocal suffixesadd+=.ls
+setlocal suffixesadd+=.LS
+setlocal suffixesadd+=.pe
+setlocal suffixesadd+=.PE
+
 nnoremap <silent><buffer> <leader>dc :%s/\(LBL\)\@<![\[,]\d\+\zs:[^\]]*//g<CR>
 let b:undo_ftplugin = "setlocal sua<"
 
