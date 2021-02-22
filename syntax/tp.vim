@@ -135,7 +135,7 @@ hi def link     tpItemComment       Comment
 " mod by Knosowski
 " syn match       tpLineNumber        /^ \+:/
 " syn match       tpLineNumber        /^ \+\d\+:/
-syn match       tpLineNumber        /^\s*\d\*:/ containedin=tpMotion,tpComment
+syn match       tpLineNumber        /^\s*\d*:/ containedin=tpMotion,tpComment
 hi def link     tpLineNumber        Comment 
 
 " Strings
@@ -217,7 +217,7 @@ hi def link     tpKeyword           Keyword
 " syn match       tpComment           /\(\s*\d*:\s*\)\@<=!.*/	contains=@spell
 " syn region      tpComment           start="--eg:" end=";" contains=@spell
 " syn match       tpRemark            /\(\s*\d*:\s*\)\@<=\/\/.*/
-syn match       tpComment           /^\s*\d\*:\s*!.*\ze ;/	contains=@spell
+syn match       tpComment           /^\s*\d*:\s*!.*\ze ;/	contains=@spell
 syn match       tpError             /\(!.\{32}\)\@<=.*\ze ;/ containedin=tpComment
 syn region      tpComment           start="--eg:" end="\ze;" contains=@spell
 " question Knosowski: why not contains=@spell here?
